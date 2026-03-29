@@ -1,10 +1,10 @@
-# Khushraj Rai — Portfolio
+# Khushraj Rai Portfolio
 
 A futuristic, fully animated personal portfolio built with React, Framer Motion, and Vite. Designed from scratch with a red-dominant dark aesthetic, custom cursor, and smooth page transitions.
 
 ## Tech Stack
 
-- **React 18** — Component-based UI
+- **React 18** - Component-based UI
 - **Framer Motion** — Animations and transitions
 - **React Router DOM** — Client-side routing
 - **React Icons** — Icon library
