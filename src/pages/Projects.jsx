@@ -74,7 +74,6 @@ const projects = [
             { label: 'Vercel', color: 'amber' },
         ],
         link: 'https://weatherly-app-puce.vercel.app/',
-        // Drop screenshots into: src/assets/projects/weatherly/
         images: [
             'src/assets/projects/weatherly/1.png',
             'src/assets/projects/weatherly/2.png',
@@ -94,7 +93,6 @@ const projects = [
             { label: 'Streamlit', color: 'amber' },
         ],
         link: 'https://heart-stroke-risk-prediction.streamlit.app/',
-        // Drop screenshots into: src/assets/projects/heartstroke/
         images: [
             'src/assets/projects/heartstroke/1.png',
             'src/assets/projects/heartstroke/2.png',
@@ -110,7 +108,7 @@ const chipColors = {
     amber: { background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)', color: '#FCD34D' },
 }
 
-// ── Image Slider ──────────────────────────────────────────────────────────────
+// Image Slider
 function ImageSlider({ images, name }) {
     const [active, setActive] = useState(0)
 
@@ -230,7 +228,7 @@ function arrowBtn(side) {
     }
 }
 
-// ── Project Content (left side) ───────────────────────────────────────────────
+// Project Content (left side)
 function ProjectContent({ p, reversed }) {
     return (
         <div style={{
@@ -322,7 +320,7 @@ function ProjectContent({ p, reversed }) {
     )
 }
 
-// ── Main Export ───────────────────────────────────────────────────────────────
+// Main Export
 export default function Projects() {
     return (
         <div style={{ paddingTop: 11 }}>
@@ -408,7 +406,7 @@ export default function Projects() {
                 </div>
             </section>
 
-            {/* ── Responsive ── */}
+            {/* Responsive  */}
             <style>{`
                 @media (max-width: 768px) {
                     .projects-header {
