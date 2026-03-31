@@ -13,7 +13,7 @@ export default function Footer() {
                 Khushraj Rai © {new Date().getFullYear()}
             </span>
             <span >
-                <img src="favicon.png" style={{ padding: '3px 1px 0px 1px', width: "30px", height: "30px", alignItems: 'center', justifyContent: 'center' }}
+                <img src="public\logo\favicon-logo.png" style={{ padding: '3px 1px 0px 1px', width: "30px", height: "30px", alignItems: 'center', justifyContent: 'center' }}
                     alt="logo" />
             </span>
             <div style={{ textAlign: 'right' }}>
@@ -26,6 +26,7 @@ export default function Footer() {
                         padding: '4px 18px', borderRadius: 2, transition: 'all .25s',
                     }}
                 >
+                    {/* send to home */}
                     ↑ Back to Top
                 </button>
             </div>
