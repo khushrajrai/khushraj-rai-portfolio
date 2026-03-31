@@ -40,7 +40,7 @@ export default function Stack() {
                         </p>
                         {/* <div style={{ padding: 20, border: '1px solid var(--border)', borderRadius: 4, background: 'var(--s1)' }}>
                             <div style={{ fontFamily: 'var(--bebas)', fontSize: 52, color: 'var(--red)', lineHeight: 1, letterSpacing: '.02em' }}>
-                                28<span style={{ color: 'var(--text)', fontSize: 28 }}>+</span>
+                                28+<span style={{ color: 'var(--text)', fontSize: 28 }}>+</span>
                             </div>
                             <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', letterSpacing: '.2em', textTransform: 'uppercase', marginTop: 4 }}>Tools mastered</div>
                         </div> */}
