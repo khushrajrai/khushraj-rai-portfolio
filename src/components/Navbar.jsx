@@ -87,7 +87,7 @@ export default function Navbar() {
                     ))}
                 </div>
 
-                {/* DESKTOP BADGE */}
+                {/* Desktop BADGE  */}
                 <div className="nav-desktop-badge" style={{
                     display: 'flex', alignItems: 'center', gap: 6,
                     padding: '6px 16px', border: '1px solid rgba(232,37,58,0.3)',
