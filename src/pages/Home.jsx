@@ -9,7 +9,7 @@ const fadeUp = (delay = 0) => ({
 
 export default function Home() {
     return (
-        <div style={{ paddingTop: 64 }}>
+        <div style={{ paddingTop: 34 }}>
             {/* HERO  */}
             <section style={{
                 minHeight: 'calc(100vh - 64px)',

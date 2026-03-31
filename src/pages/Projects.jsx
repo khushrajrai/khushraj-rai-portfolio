@@ -15,11 +15,11 @@ const projects = [
         ],
         link: 'https://invigil-ai.vercel.app/',
         images: [
-            'src/assets/projects/invigilai/1.png',
-            'src/assets/projects/invigilai/2.png',
-            'src/assets/projects/invigilai/3.png',
-            'src/assets/projects/invigilai/4.png',
-            'src/assets/projects/invigilai/5.png',
+            'projects/invigilai/1.png',
+            'projects/invigilai/2.png',
+            'projects/invigilai/3.png',
+            'projects/invigilai/4.png',
+            'projects/invigilai/5.png',
         ],
     },
     {
@@ -35,10 +35,10 @@ const projects = [
         ],
         link: 'https://moviematch-recommender-system.onrender.com/',
         images: [
-            'src/assets/projects/moviematch/1.png',
-            'src/assets/projects/moviematch/2.png',
-            'src/assets/projects/moviematch/3.png',
-            'src/assets/projects/moviematch/4.png',
+            'projects/moviematch/1.png',
+            'projects/moviematch/2.png',
+            'projects/moviematch/3.png',
+            'projects/moviematch/4.png',
         ],
     },
     {
@@ -54,12 +54,12 @@ const projects = [
         ],
         link: 'https://diagnex.vercel.app/',
         images: [
-            'src/assets/projects/diagnex/1.png',
-            'src/assets/projects/diagnex/2.png',
-            'src/assets/projects/diagnex/3.png',
-            'src/assets/projects/diagnex/4.png',
-            'src/assets/projects/diagnex/5.png',
-            'src/assets/projects/diagnex/6.png',
+            'projects/diagnex/1.png',
+            'projects/diagnex/2.png',
+            'projects/diagnex/3.png',
+            'projects/diagnex/4.png',
+            'projects/diagnex/5.png',
+            'projects/diagnex/6.png',
         ],
     },
     {
@@ -75,10 +75,10 @@ const projects = [
         ],
         link: 'https://weatherly-app-puce.vercel.app/',
         images: [
-            'src/assets/projects/weatherly/1.png',
-            'src/assets/projects/weatherly/2.png',
-            'src/assets/projects/weatherly/3.png',
-            'src/assets/projects/weatherly/4.png',
+            'projects/weatherly/1.png',
+            'projects/weatherly/2.png',
+            'projects/weatherly/3.png',
+            'projects/weatherly/4.png',
         ],
     },
     {
@@ -94,9 +94,9 @@ const projects = [
         ],
         link: 'https://heart-stroke-risk-prediction.streamlit.app/',
         images: [
-            'src/assets/projects/heartstroke/1.png',
-            'src/assets/projects/heartstroke/2.png',
-            'src/assets/projects/heartstroke/3.png',
+            'projects/heartstroke/1.png',
+            'projects/heartstroke/2.png',
+            'projects/heartstroke/3.png',
         ],
     },
 ]

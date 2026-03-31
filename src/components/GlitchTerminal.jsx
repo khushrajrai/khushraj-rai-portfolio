@@ -15,8 +15,8 @@ const LINES = [
     { text: '> based_in: New Delhi, India', color: 'red' },
 ]
 
-const LINE_INTERVAL = 100  // ms per line -  12 × 290 = 3.5 s reveal
-const PAUSE_AFTER = 100  // ms pause at full display before restart
+const LINE_INTERVAL = 400  // ms per line -  12 × 290 = 3.5 s reveal
+const PAUSE_AFTER = 800  // ms pause at full display before restart
 
 export default function GlitchTerminal() {
     const canvasRef = useRef(null)

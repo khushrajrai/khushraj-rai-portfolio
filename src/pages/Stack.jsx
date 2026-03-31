@@ -57,7 +57,7 @@ export default function Stack() {
                                 letterSpacing: '-.01em'
                             }}>
                                 "Tools help you build.
-                                <span style={{ color: 'var(--red)' }}> Decisions make it work.</span>”
+                                <span style={{ color: 'var(--red)' }}>Decisions make it work.</span>”
                             </div>
 
                             {/* <div style={{
