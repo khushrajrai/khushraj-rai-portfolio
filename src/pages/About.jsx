@@ -36,12 +36,12 @@ const typeColors = {
 
 export default function About() {
     return (
-        <div style={{ paddingTop: 64 }}>
-            <section style={{ padding: '80px 48px 90px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 64, alignItems: 'center' }}>
+        <div style={{ paddingTop: 1 }}>
+            <section style={{ padding: '0px 48px 11px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 64, alignItems: 'center' }}>
                 {/* Left */}
                 <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
-                        <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(232,37,58,0.1)', letterSpacing: '.02em' }}>04</span>
+                        <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(255, 59, 77, 0.18)', letterSpacing: '.02em' }}>04</span>
                         <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red)', letterSpacing: '.25em', textTransform: 'uppercase' }}>About</span>
                     </div>
 

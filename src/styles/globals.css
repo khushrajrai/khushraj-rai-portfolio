@@ -19,7 +19,8 @@
     --violet: #7C3AED;
     --teal: #0D9488;
     --text: #F7F3F8;
-    --muted: rgba(247, 243, 248, 0.38);
+    /* --muted: rgba(247, 243, 248, 0.38); */
+    --muted: rgba(247, 243, 248, 0.55);
     --muted2: rgba(247, 243, 248, 0.15);
     --border: rgba(232, 37, 58, 0.12);
     --border2: rgba(247, 243, 248, 0.07);

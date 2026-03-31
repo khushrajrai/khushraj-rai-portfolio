@@ -1,5 +1,5 @@
 export default function Ticker() {
-    const items = ['AIML Developer', 'Full Stack Developer', 'Python', 'Java', 'C++', 'Agentic AI']
+    const items = ['AIML Developement', 'Full Stack Development', 'Python', 'Java', 'C++', 'Agentic AI']
 
     return (
         <div style={{
@@ -8,7 +8,7 @@ export default function Ticker() {
         }}>
             <div style={{
                 display: 'flex', gap: 0,
-                animation: 'ticker 14s linear infinite',
+                animation: 'ticker 6s linear infinite',
                 whiteSpace: 'nowrap',
             }}>
                 {[...items, ...items].map((item, i) => (

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Ticker from '../components/Ticker'
 
 const skills = [
     { cat: 'Frontend + Lang', count: '09', chips: ['Java', 'C++', 'Python', 'JavaScript', 'React', 'HTML5', 'CSS3', 'ReactFlow'], color: 'red' },
@@ -18,11 +19,11 @@ const chipStyles = {
 
 export default function Stack() {
     return (
-        <div style={{ paddingTop: 64 }}>
-            <section style={{ padding: '80px 48px 90px' }}>
+        <div style={{ paddingTop: 42 }}>
+            <section style={{ padding: '15px 48px 15px' }}>
                 {/* Header */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 48 }}>
-                    <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(232,37,58,0.1)', letterSpacing: '.02em' }}>02</span>
+                    <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(255, 59, 77, 0.18)', letterSpacing: '.02em' }}>02</span>
                     <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red)', letterSpacing: '.25em', textTransform: 'uppercase' }}>Tech Stack</span>
                     <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
                 </div>
@@ -37,12 +38,40 @@ export default function Stack() {
                         <p style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', lineHeight: 1.85, marginBottom: 32 }}>
                             A carefully assembled arsenal, every tool chosen for a reason, not for the resume.
                         </p>
-                        <div style={{ padding: 20, border: '1px solid var(--border)', borderRadius: 4, background: 'var(--s1)' }}>
+                        {/* <div style={{ padding: 20, border: '1px solid var(--border)', borderRadius: 4, background: 'var(--s1)' }}>
                             <div style={{ fontFamily: 'var(--bebas)', fontSize: 52, color: 'var(--red)', lineHeight: 1, letterSpacing: '.02em' }}>
                                 28<span style={{ color: 'var(--text)', fontSize: 28 }}>+</span>
                             </div>
                             <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', letterSpacing: '.2em', textTransform: 'uppercase', marginTop: 4 }}>Tools mastered</div>
+                        </div> */}
+                        <div style={{
+                            padding: 24,
+                            border: '1px solid var(--border)',
+                            borderRadius: 4,
+                            background: 'var(--s1)'
+                        }}>
+                            <div style={{
+                                fontSize: 18,
+                                lineHeight: 1.6,
+                                fontWeight: 600,
+                                letterSpacing: '-.01em'
+                            }}>
+                                "Tools help you build.
+                                <span style={{ color: 'var(--red)' }}> Decisions make it work.</span>”
+                            </div>
+
+                            {/* <div style={{
+                                marginTop: 12,
+                                fontFamily: 'var(--mono)',
+                                fontSize: 9,
+                                color: 'var(--muted)',
+                                letterSpacing: '.2em',
+                                textTransform: 'uppercase'
+                            }}>
+
+                            </div> */}
                         </div>
+
                     </div>
 
                     {/* Skills board */}
@@ -75,6 +104,9 @@ export default function Stack() {
                             </motion.div>
                         ))}
                     </div>
+                </div>
+                <div style={{ padding: '38px 0px' }}>
+                    <Ticker />
                 </div>
                 <style>{`
 /* 📱 MOBILE ONLY FIX */

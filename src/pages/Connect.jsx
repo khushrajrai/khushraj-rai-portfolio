@@ -10,9 +10,9 @@ const socials = [
 
 export default function Connect() {
     return (
-        <div style={{ paddingTop: 64 }}>
+        <div style={{ paddingTop: 44 }}>
             <section style={{
-                minHeight: '90vh',
+                minHeight: '64vh',
                 display: 'flex',
                 alignItems: 'center',
                 borderTop: '1px solid var(--border2)',
@@ -24,7 +24,7 @@ export default function Connect() {
                 <div
                     style={{
                         width: '100%',
-                        padding: '80px 48px',
+                        padding: '40px 48px',
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr',
                         gap: 60,
@@ -57,7 +57,7 @@ export default function Connect() {
                         {/* Title */}
                         <div>
                             {[
-                                { text: 'Reach', style: { color: 'rgba(247,243,248,0.08)', WebkitTextStroke: '1px rgba(247,243,248,0.1)' } },
+                                { text: 'Reach', style: { color: 'var(--text)', WebkitTextStroke: '1px rgba(247,243,248,0.1)' } },
                                 { text: 'Out.', style: { color: 'var(--text)' } },
                                 { text: 'Now.', style: { color: 'var(--red)' } },
                             ].map((line, i) => (

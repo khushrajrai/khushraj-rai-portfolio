@@ -2,8 +2,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 
 const links = [
-    { id: 'projects', label: 'Projects' },
     { id: 'stack', label: 'Stack' },
+    { id: 'projects', label: 'Projects' },
     { id: 'about', label: 'About' },
     { id: 'connect', label: 'Contact' },
 ]
@@ -47,7 +47,7 @@ export default function Navbar() {
                         </svg>
                     </div>
                     <span className="nav-logo-desktop" style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--text)' }}>
-                        <strong>KR</strong> / Portfolio
+                        Based in <strong>New Delhi</strong>
                     </span>
                     <span className="nav-logo-mobile" style={{
                         display: 'none',
@@ -206,7 +206,7 @@ export default function Navbar() {
                                 transition={{ duration: 1.2, repeat: Infinity }}
                                 style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--red)' }}
                             />
-                            Connect Now
+                            Based in New Delhi
                         </div>
                     </motion.div>
                 )}
