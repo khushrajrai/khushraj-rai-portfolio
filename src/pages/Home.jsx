@@ -130,7 +130,6 @@ export default function Home() {
 
             </section>
 
-            {/* <Ticker /> */}
 
             {/* ── Context Triptych ── */}
             <section style={{ padding: '30px 48px 15px 48px' }}>

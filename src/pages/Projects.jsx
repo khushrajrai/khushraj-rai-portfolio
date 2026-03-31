@@ -14,8 +14,6 @@ const projects = [
             { label: 'Docker', color: 'amber' },
         ],
         link: 'https://invigil-ai.vercel.app/',
-        // Drop screenshots into: src/assets/projects/invigilai/
-        // Name them: 1.png, 2.png, 3.png (up to any count)
         images: [
             'src/assets/projects/invigilai/1.png',
             'src/assets/projects/invigilai/2.png',
@@ -36,7 +34,6 @@ const projects = [
             { label: 'Streamlit', color: 'amber' },
         ],
         link: 'https://moviematch-recommender-system.onrender.com/',
-        // Drop screenshots into: src/assets/projects/moviematch/
         images: [
             'src/assets/projects/moviematch/1.png',
             'src/assets/projects/moviematch/2.png',
@@ -56,7 +53,6 @@ const projects = [
             { label: 'Docker', color: 'amber' },
         ],
         link: 'https://diagnex.vercel.app/',
-        // Drop screenshots into: src/assets/projects/diagnex/
         images: [
             'src/assets/projects/diagnex/1.png',
             'src/assets/projects/diagnex/2.png',
@@ -83,6 +79,7 @@ const projects = [
             'src/assets/projects/weatherly/1.png',
             'src/assets/projects/weatherly/2.png',
             'src/assets/projects/weatherly/3.png',
+            'src/assets/projects/weatherly/4.png',
         ],
     },
     {

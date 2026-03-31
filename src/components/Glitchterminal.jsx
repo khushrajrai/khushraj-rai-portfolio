@@ -15,7 +15,7 @@ const LINES = [
     { text: '> based_in: New Delhi, India', color: 'red' },
 ]
 
-const LINE_INTERVAL = 100  // ms per line  →  12 × 290 ≈ 3.5 s reveal
+const LINE_INTERVAL = 100  // ms per line -  12 × 290 = 3.5 s reveal
 const PAUSE_AFTER = 100  // ms pause at full display before restart
 
 export default function GlitchTerminal() {
@@ -56,11 +56,11 @@ export default function GlitchTerminal() {
             const H = canvas.height
             if (!W || !H) return
 
-            // ── initialise phase clock ──
+            // initialise phase clock 
             if (phaseStart === null) phaseStart = timestamp
             const elapsed = timestamp - phaseStart
 
-            // ── state machine ──
+            //  state machine 
             if (phase === 'typing') {
                 const target = Math.min(LINES.length, Math.floor(elapsed / LINE_INTERVAL) + 1)
                 while (lineIndex < target) {
@@ -80,7 +80,7 @@ export default function GlitchTerminal() {
                 }
             }
 
-            // ── render ──
+            //  render 
             ctx.fillStyle = '#08050A'
             ctx.fillRect(0, 0, W, H)
 

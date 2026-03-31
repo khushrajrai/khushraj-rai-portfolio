@@ -24,7 +24,7 @@ export default function Cursor() {
     }, [])
 
     useEffect(() => {
-        if (isMobile) return  // ✅ stops only on mobile
+        if (isMobile) return  // stops in mobile
 
         const move = (e) => {
             dotX.set(e.clientX)
@@ -38,7 +38,7 @@ export default function Cursor() {
         }
     }, [isMobile])
 
-    if (isMobile) return null   // ✅ safe return AFTER hooks
+    if (isMobile) return null   // safe return after hooks
 
     return (
         <>
