@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Ticker from '../components/Ticker'
 import GlitchTerminal from '../components/GlitchTerminal'
 
 const fadeUp = (delay = 0) => ({
@@ -11,7 +10,7 @@ const fadeUp = (delay = 0) => ({
 export default function Home() {
     return (
         <div style={{ paddingTop: 64 }}>
-            {/* ── HERO ── */}
+            {/* HERO  */}
             <section style={{
                 minHeight: 'calc(100vh - 64px)',
                 display: 'grid',
@@ -20,10 +19,10 @@ export default function Home() {
                 overflow: 'hidden',
             }}>
 
-                {/* ── Glitch Terminal (right side, desktop only) ── */}
+                {/*  Glitch Terminal (right side, desktop only)  */}
                 <GlitchTerminal />
 
-                {/* ── Divider line between left text and terminal ── */}
+                {/*  Divider line between left text and terminal  */}
                 <div className="hero-divider" style={{
                     position: 'absolute',
                     top: 0, bottom: 0,
@@ -131,7 +130,7 @@ export default function Home() {
             </section>
 
 
-            {/* ── Context Triptych ── */}
+            {/*  Context Triptych  */}
             <section style={{ padding: '30px 48px 15px 48px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 48 }}>
                     <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(255, 59, 77, 0.18),0.1)', letterSpacing: '.02em' }}>01</span>
