@@ -96,7 +96,7 @@ export default function GlitchTerminal() {
                 ctx.fillText(line.text, PAD + 10, TOP + i * LINE_H)
             })
 
-            // cursor blink on last line
+            // cursor blinking on last line
             if (Math.floor(timestamp / 200) % 2 === 0 && displayed.length > 0) {
                 const last = displayed[displayed.length - 1]
                 const tw = ctx.measureText(last.text).width
