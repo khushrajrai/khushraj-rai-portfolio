@@ -50,6 +50,10 @@ button {
     cursor: none;
 }
 
+section {
+    scroll-margin-top: 80px;
+}
+
 ::selection {
     background: rgba(232, 37, 58, 0.3);
     color: var(--text);
@@ -66,4 +70,56 @@ button {
 ::-webkit-scrollbar-thumb {
     background: var(--red);
     border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px !important;
+    }
+
+    section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+
+/* ---------- RESPONSIVE SYSTEM ---------- */
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    section {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    nav {
+        padding: 0 20px !important;
+    }
+
+    h1 {
+        line-height: 1.05 !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    section {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
 }

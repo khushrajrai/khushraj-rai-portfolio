@@ -1,19 +1,20 @@
-import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 export default function Footer() {
     return (
         <footer style={{
             borderTop: '1px solid var(--border2)',
-            padding: '24px 48px',
+            padding: '14px 36px',
             display: 'grid',
             gridTemplateColumns: '1fr auto 1fr',
             alignItems: 'center',
         }}>
-            <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted2)', letterSpacing: '.2em', textTransform: 'uppercase' }}>
-                Khushraj Rai © 2026
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', letterSpacing: '.2em', textTransform: 'uppercase' }}>
+                Khushraj Rai © {new Date().getFullYear()}
             </span>
-            <span style={{ fontFamily: 'var(--bebas)', fontSize: 22, letterSpacing: '.06em', color: 'rgba(232,37,58,0.3)' }}>
-                KR
+            <span >
+                <img src="public/kr-logo.png" style={{ padding: '3px 1px 0px 1px', width: "30px", height: "30px", alignItems: 'center', justifyContent: 'center' }}
+                    alt="logo" />
             </span>
             <div style={{ textAlign: 'right' }}>
                 <button
@@ -22,7 +23,7 @@ export default function Footer() {
                         fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)',
                         letterSpacing: '.2em', textTransform: 'uppercase',
                         background: 'none', border: '1px solid var(--border2)',
-                        padding: '8px 18px', borderRadius: 2, transition: 'all .25s',
+                        padding: '4px 18px', borderRadius: 2, transition: 'all .25s',
                     }}
                 >
                     ↑ Back to Top

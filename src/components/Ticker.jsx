@@ -1,5 +1,5 @@
 export default function Ticker() {
-    const items = ['AI Systems', 'Full Stack', 'C++ Engineering', 'Cybersecurity', 'MCP Servers', 'Agentic AI']
+    const items = ['AIML Developer', 'Full Stack Developer', 'Python', 'Java', 'C++', 'Agentic AI']
 
     return (
         <div style={{

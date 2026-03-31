@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion'
 
 const skills = [
-    { cat: 'Frontend + Lang', count: '09', chips: ['C', 'C++', 'Python', 'JavaScript', 'React', 'Qt', 'HTML5', 'CSS3', 'ReactFlow'], color: 'red' },
+    { cat: 'Frontend + Lang', count: '09', chips: ['Java', 'C++', 'Python', 'JavaScript', 'React', 'HTML5', 'CSS3', 'ReactFlow'], color: 'red' },
     { cat: 'AI / ML', count: '04', chips: ['TensorFlow', 'PyTorch', 'OpenCV', 'FastAPI'], color: 'violet' },
     { cat: 'Backend + DB', count: '04', chips: ['Node.js', 'Express', 'MySQL', 'MongoDB'], color: 'teal' },
-    { cat: 'Cybersecurity', count: '04', chips: ['Burp Suite', 'Nmap', 'Wireshark', 'Ghidra'], color: 'red' },
     { cat: 'DevOps', count: '06', chips: ['Docker', 'Git', 'GitHub Actions', 'CI/CD', 'Vite', 'NPM'], color: 'amber' },
-    { cat: 'Deploy + Design', count: '05', chips: ['Vercel', 'Render', 'Netlify', 'Figma', 'Photoshop'], color: 'teal' },
+    { cat: 'Deploy + Design', count: '05', chips: ['Vercel', 'Render', 'Figma', 'Canva'], color: 'teal' },
 ]
 
 const chipStyles = {
@@ -28,7 +27,7 @@ export default function Stack() {
                     <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 48, alignItems: 'start' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 48, alignItems: 'start' }}>
                     {/* Sidebar */}
                     <div>
                         <h1 style={{ fontFamily: 'var(--bebas)', fontSize: 'clamp(52px, 6vw, 80px)', lineHeight: 0.9, letterSpacing: '.02em', marginBottom: 24 }}>
@@ -36,11 +35,11 @@ export default function Stack() {
                             <span style={{ WebkitTextStroke: '2px var(--red)', color: 'transparent' }}>Wield</span>
                         </h1>
                         <p style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', lineHeight: 1.85, marginBottom: 32 }}>
-                            A carefully assembled arsenal — every tool chosen for a reason, not for the resume.
+                            A carefully assembled arsenal, every tool chosen for a reason, not for the resume.
                         </p>
                         <div style={{ padding: 20, border: '1px solid var(--border)', borderRadius: 4, background: 'var(--s1)' }}>
                             <div style={{ fontFamily: 'var(--bebas)', fontSize: 52, color: 'var(--red)', lineHeight: 1, letterSpacing: '.02em' }}>
-                                30<span style={{ color: 'var(--text)', fontSize: 28 }}>+</span>
+                                28<span style={{ color: 'var(--text)', fontSize: 28 }}>+</span>
                             </div>
                             <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', letterSpacing: '.2em', textTransform: 'uppercase', marginTop: 4 }}>Tools mastered</div>
                         </div>
@@ -77,6 +76,38 @@ export default function Stack() {
                         ))}
                     </div>
                 </div>
+                <style>{`
+/* 📱 MOBILE ONLY FIX */
+@media (max-width: 768px) {
+
+  /* Stack main layout */
+  section > div > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix skills row layout */
+  section div[style*="grid-template-columns: 200px 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Remove side border and adjust spacing */
+  section div[style*="borderRight"] {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border2) !important;
+  }
+
+  /* Reduce padding for mobile */
+  section {
+    padding: 60px 20px !important;
+  }
+
+  /* Fix big heading overflow */
+  h1 {
+    font-size: clamp(36px, 10vw, 52px) !important;
+  }
+
+}
+`}</style>
             </section>
         </div>
     )

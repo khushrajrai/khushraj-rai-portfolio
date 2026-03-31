@@ -1,7 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 export default function Cursor() {
+    const [isMobile, setIsMobile] = useState(false)
+
     const dotX = useMotionValue(-100)
     const dotY = useMotionValue(-100)
 
@@ -11,23 +13,32 @@ export default function Cursor() {
     const isHovering = useRef(false)
 
     useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768)
+        }
+
+        checkMobile()
+        window.addEventListener('resize', checkMobile)
+
+        return () => window.removeEventListener('resize', checkMobile)
+    }, [])
+
+    useEffect(() => {
+        if (isMobile) return  // ✅ stops only on mobile
+
         const move = (e) => {
             dotX.set(e.clientX)
             dotY.set(e.clientY)
         }
 
-        const addHover = () => {
-            document.querySelectorAll('button, a, .hoverable').forEach(el => {
-                el.addEventListener('mouseenter', () => { isHovering.current = true })
-                el.addEventListener('mouseleave', () => { isHovering.current = false })
-            })
-        }
-
         window.addEventListener('mousemove', move)
-        addHover()
 
-        return () => window.removeEventListener('mousemove', move)
-    }, [])
+        return () => {
+            window.removeEventListener('mousemove', move)
+        }
+    }, [isMobile])
+
+    if (isMobile) return null   // ✅ safe return AFTER hooks
 
     return (
         <>
@@ -47,9 +58,9 @@ export default function Cursor() {
                     background: 'var(--red)',
                     pointerEvents: 'none',
                     zIndex: 9999,
-                    mixBlendMode: 'screen',
                 }}
             />
+
             {/* Ring */}
             <motion.div
                 style={{

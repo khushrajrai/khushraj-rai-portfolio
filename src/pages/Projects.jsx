@@ -4,7 +4,7 @@ const projects = [
     {
         num: '001',
         name: 'InvigilAI',
-        desc: "AI proctoring that doesn't blink — deep-learning behavioral analysis detects academic dishonesty in real time. Zero tolerance, zero false negatives.",
+        desc: "AI proctoring that doesn't blink, deep-learning behavioral analysis detects academic dishonesty in real time. Zero tolerance, zero false negatives.",
         chips: [
             { label: 'YOLO', color: 'red' }, { label: 'PANNs', color: 'red' },
             { label: 'MediaPipe', color: 'violet' }, { label: 'FaceNet', color: 'violet' },
@@ -14,11 +14,11 @@ const projects = [
     },
     {
         num: '002',
-        name: 'AgentMesh',
-        desc: 'Orchestration framework for autonomous AI agents at production scale — MCP server integration, real-time decision graphs, zero single points of failure.',
+        name: 'MovieMatch',
+        desc: "AI proctoring that doesn't blink, deep-learning behavioral analysis detects academic dishonesty in real time. Zero tolerance, zero false negatives.",
         chips: [
             { label: 'Python', color: 'violet' }, { label: 'FastAPI', color: 'teal' },
-            { label: 'gRPC', color: 'teal' }, { label: 'Docker', color: 'amber' },
+            { label: 'ML', color: 'teal' }, { label: 'CF', color: 'amber' },
         ],
         link: '#',
     },
@@ -65,7 +65,10 @@ export default function Projects() {
                                 style={{ position: 'absolute', left: 0, top: 0, bottom: 0, background: 'linear-gradient(90deg, rgba(232,37,58,0.07), transparent)', zIndex: 0 }}
                                 transition={{ duration: 0.4 }}
                             />
-                            <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', alignItems: 'center', padding: '28px 48px', position: 'relative', zIndex: 1, cursor: 'none' }}>
+                            <div style={{
+                                display: 'grid', gridTemplateColumns: '60px 1fr',
+                                rowGap: 10, alignItems: 'center', padding: '28px 48px', position: 'relative', zIndex: 1, cursor: 'none'
+                            }}>
                                 <div style={{ fontFamily: 'var(--bebas)', fontSize: 36, color: 'var(--muted2)', lineHeight: 1, letterSpacing: '.02em' }}>{p.num}</div>
                                 <div>
                                     <div style={{ fontSize: 24, fontWeight: 700, letterSpacing: '-.015em', marginBottom: 6 }}>{p.name}</div>

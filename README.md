@@ -4,12 +4,12 @@ A futuristic, fully animated personal portfolio built with React, Framer Motion,
 
 ## Tech Stack
 
-- **React 18** - Component-based UI
-- **Framer Motion** — Animations and transitions
-- **React Router DOM** — Client-side routing
-- **React Icons** — Icon library
-- **Vite** — Lightning fast build tool
-- **Space Grotesk + Bebas Neue + Space Mono** — Typography
+- **React 18** : Component-based UI
+- **Framer Motion** : Animations and transitions
+- **React Router DOM** : Client-side routing
+- **React Icons** : Icon library
+- **Vite** : Lightning fast build tool
+- **Space Grotesk + Bebas Neue + Space Mono** : Typography
 
 ## Features
 

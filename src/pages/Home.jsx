@@ -9,7 +9,6 @@ const fadeUp = (delay = 0) => ({
 })
 
 export default function Home() {
-    const navigate = useNavigate()
 
     return (
         <div style={{ paddingTop: 64 }}>
@@ -50,18 +49,18 @@ export default function Home() {
                     letterSpacing: '.4em', textTransform: 'uppercase', whiteSpace: 'nowrap',
                     zIndex: 2,
                 }}>
-                    2026 — New Delhi, India — Available
+                    2026 Portfolio - Scroll to Explore
                 </div>
 
                 {/* Main content */}
-                <div style={{ position: 'relative', zIndex: 2, padding: '80px 48px 60px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ position: 'relative', zIndex: 2, padding: 'clamp(60px, 8vw, 80px) clamp(20px, 6vw, 48px)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     <motion.div {...fadeUp(0)} style={{
                         display: 'flex', alignItems: 'center', gap: 14,
                         fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red)',
                         letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: 28,
                     }}>
                         <div style={{ width: 40, height: 1, background: 'var(--red)' }} />
-                        Systems Engineer & AI Architect
+                        AIML Developer
                     </motion.div>
 
                     <div style={{ marginBottom: 36 }}>
@@ -93,15 +92,15 @@ export default function Home() {
                         fontFamily: 'var(--grot)', fontSize: 15, color: 'var(--muted)',
                         lineHeight: 1.75, maxWidth: 440, marginBottom: 44, fontWeight: 300,
                     }}>
-                        Not just writing code —{' '}
-                        <strong style={{ color: 'var(--text)', fontWeight: 600 }}>engineering the substrate</strong>
-                        {' '}that holds systems together when everything else breaks.
+                        Not just solving problems,{' '}
+                        <strong style={{ color: 'var(--text)', fontWeight: 600 }}>engineering robust solutions</strong>
+                        {' '}that endure under pressure and evolve with demand.
                     </motion.p>
 
                     <motion.div {...fadeUp(0.45)} style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                         <motion.button
                             whileHover={{ y: -2, boxShadow: '0 12px 40px rgba(232,37,58,0.4)' }}
-                            onClick={() => window.open('#', '_blank')}
+                            onClick={() => window.open('https://docs.google.com/document/d/1Gpdy8IO-JFnxQGQ8tuZ0TVVnl08lFP1IkMhYKfZr2kI/edit?usp=sharing', '_blank')}
                             style={{
                                 padding: '14px 32px', background: 'var(--red)', color: '#fff',
                                 border: 'none', borderRadius: 2, fontFamily: 'var(--mono)',
@@ -113,7 +112,7 @@ export default function Home() {
                         </motion.button>
                         <motion.button
                             whileHover={{ borderColor: 'rgba(232,37,58,0.4)', color: 'var(--red)' }}
-                            onClick={() => window.open('https://github.com', '_blank')}
+                            onClick={() => window.open('https://github.com/khushrajrai/', '_blank')}
                             style={{
                                 padding: '14px 32px', background: 'transparent', color: 'var(--muted)',
                                 border: '1px solid var(--border2)', borderRadius: 2,
@@ -129,7 +128,8 @@ export default function Home() {
                 {/* Stats Strip */}
                 <div style={{
                     borderTop: '1px solid var(--border2)',
-                    display: 'grid', gridTemplateColumns: 'auto 1fr auto',
+                    display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                    rowGap: 20,
                     alignItems: 'center', padding: '0 48px', height: 100,
                     position: 'relative', zIndex: 2,
                 }}>
@@ -140,17 +140,21 @@ export default function Home() {
                             transition={{ duration: 3, repeat: Infinity }}
                             style={{
                                 width: 64, height: 64, borderRadius: 4,
-                                border: '2px solid rgba(232,37,58,0.3)',
+                                border: '1px solid rgba(232,37,58,0.3)',
                                 background: 'var(--s2)', display: 'flex', alignItems: 'center',
                                 justifyContent: 'center', flexShrink: 0, overflow: 'hidden',
                             }}
                         >
                             {/* Replace this span with <img src="your-photo.jpg" style={{width:'100%',height:'100%',objectFit:'cover'}} /> */}
-                            <span style={{ fontFamily: 'var(--bebas)', fontSize: 26, color: 'var(--red)' }}>KR</span>
+                            {/* <span img src="khushrajraiimage.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                            {/* <span style={{ fontFamily: 'var(--bebas)', fontSize: 26, color: 'var(--red)' }}>KR</span> */}
+                            {/* <span style={{ fontFamily: 'var(--bebas)', fontSize: 26, color: 'var(--red)' }}>KR */}
+                            <img src="src/assets/khushrajraiimage.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            {/* </span> */}
                         </motion.div>
                         <div>
                             <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: '-.01em' }}>Khushraj Rai</div>
-                            <div style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red3)', letterSpacing: '.06em', marginTop: 3 }}>AI + Systems Engineer</div>
+                            <div style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red3)', letterSpacing: '.06em', marginTop: 3 }}>AIML & Full Stack Developer</div>
                             <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', letterSpacing: '.08em', marginTop: 4, display: 'flex', alignItems: 'center', gap: 5 }}>
                                 <motion.div animate={{ opacity: [1, 0.4, 1] }} transition={{ duration: 2, repeat: Infinity }}
                                     style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--red)' }}
@@ -161,7 +165,7 @@ export default function Home() {
                     </div>
 
                     {/* Stats */}
-                    <div style={{ display: 'flex', gap: 0, justifyContent: 'center' }}>
+                    {/* <div style={{ display: 'flex', gap: 0, justifyContent: 'center' }}>
                         {[['6+', 'Languages'], ['12+', 'Projects'], ['4', 'Domains']].map(([num, label]) => (
                             <div key={label} style={{ padding: '0 36px', borderRight: '1px solid var(--border2)', textAlign: 'center' }}>
                                 <div style={{ fontFamily: 'var(--bebas)', fontSize: 36, lineHeight: 1, letterSpacing: '.02em' }}>
@@ -171,7 +175,7 @@ export default function Home() {
                                 <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', letterSpacing: '.2em', textTransform: 'uppercase', marginTop: 4 }}>{label}</div>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
 
                     {/* Location */}
                     <div style={{ textAlign: 'right', fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--muted)', letterSpacing: '.18em', textTransform: 'uppercase', lineHeight: 1.8 }}>
@@ -189,11 +193,11 @@ export default function Home() {
                     <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red)', letterSpacing: '.25em', textTransform: 'uppercase' }}>Right Now</span>
                     <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr 1fr', gap: 1, background: 'var(--border2)', border: '1px solid var(--border2)', borderRadius: 6, overflow: 'hidden' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 1, background: 'var(--border2)', border: '1px solid var(--border2)', borderRadius: 6, overflow: 'hidden' }}>
                     {[
-                        { num: 'I', label: 'Current Status', q: 'Where am I standing?', a: 'Pursuing B.Tech in Computer Science at VIT Bhopal — using university as a launchpad, not a ceiling. Every semester is a sprint toward real systems.' },
-                        { num: 'II', label: 'Trajectory', q: 'Where am I aimed?', a: 'Deep into AI Engineering at scale — not surface-level, but the infrastructure and reasoning that powers intelligent systems.' },
-                        { num: 'III', label: 'Active Build', q: "What's in the forge?", a: 'Agentic AI systems and production-ready MCP servers — the next primitive for autonomous software.' },
+                        { num: 'I', label: 'Current Status', q: 'Where am I standing?', a: 'Pursuing B.Tech in Computer Science at VIT Bhopal, using university as a launchpad, not a ceiling. Every semester is a sprint toward real systems.' },
+                        { num: 'II', label: 'Trajectory', q: 'Where am I aimed?', a: 'Deep into AI Engineering at scale , not surface-level, but the infrastructure and reasoning that powers intelligent systems.' },
+                        { num: 'III', label: 'Active Build', q: "What's in the forge?", a: 'Agentic AI systems and production-ready projects — the next primitive for autonomous software.' },
                     ].map((card) => (
                         <motion.div
                             key={card.num}

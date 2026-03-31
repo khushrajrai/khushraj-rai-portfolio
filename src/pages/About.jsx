@@ -13,12 +13,12 @@ const codeLines = [
     { n: 3, parts: [{ t: 'key', v: '  base' }, { t: 'brk', v: ':' }, { t: 'str', v: ' "New Delhi, India"' }, { t: 'brk', v: ',' }] },
     { n: 4, parts: [{ t: 'key', v: '  university' }, { t: 'brk', v: ':' }, { t: 'str', v: ' "VIT Bhopal"' }, { t: 'brk', v: ',' }] },
     { n: 5, parts: [{ t: 'key', v: '  domains' }, { t: 'brk', v: ': [' }] },
-    { n: 6, parts: [{ t: 'str', v: '    "AI Systems"' }, { t: 'brk', v: ', ' }, { t: 'str', v: '"Full-Stack"' }, { t: 'brk', v: ',' }] },
-    { n: 7, parts: [{ t: 'str', v: '    "C++ Engineering"' }, { t: 'brk', v: ', ' }, { t: 'str', v: '"Security"' }] },
+    { n: 6, parts: [{ t: 'str', v: '    "AIML Developer"' }, { t: 'brk', v: ', ' }, { t: 'str', v: '"Full-Stack Development"' }, { t: 'brk', v: ',' }] },
+    { n: 7, parts: [{ t: 'str', v: '    "Java"' }, { t: 'brk', v: ', ' }, { t: 'str', v: '"C++ Engineering"' }] },
     { n: 8, parts: [{ t: 'brk', v: '  ],' }] },
     { n: 9, parts: [{ t: 'key', v: '  status' }, { t: 'brk', v: ':' }, { t: 'val', v: ' "open_to_work"' }, { t: 'brk', v: ',' }] },
     { n: 10, parts: [{ t: 'cmt', v: '  // what\'s in the forge:' }] },
-    { n: 11, parts: [{ t: 'key', v: '  building' }, { t: 'brk', v: ':' }, { t: 'str', v: ' "Agentic AI + MCP"' }, { t: 'brk', v: ',' }] },
+    { n: 11, parts: [{ t: 'key', v: '  building' }, { t: 'brk', v: ':' }, { t: 'str', v: ' "Agentic AI"' }, { t: 'brk', v: ',' }] },
     { n: 12, parts: [{ t: 'key', v: '  mission' }, { t: 'brk', v: ':' }, { t: 'str', v: ' "AI Engineer @ scale"' }] },
     { n: 13, parts: [{ t: 'brk', v: '}' }] },
     { n: 14, parts: [] },
@@ -37,7 +37,7 @@ const typeColors = {
 export default function About() {
     return (
         <div style={{ paddingTop: 64 }}>
-            <section style={{ padding: '80px 48px 90px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
+            <section style={{ padding: '80px 48px 90px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 64, alignItems: 'center' }}>
                 {/* Left */}
                 <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
