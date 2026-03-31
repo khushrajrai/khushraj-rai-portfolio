@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import Logo from '../assets/logo/favicon-logo.png';
-
 
 export default function Footer() {
     return (
@@ -15,7 +13,7 @@ export default function Footer() {
                 Khushraj Rai © {new Date().getFullYear()}
             </span>
             <span >
-                <img src="{Logo}" style={{ padding: '3px 1px 0px 1px', width: "30px", height: "30px", alignItems: 'center', justifyContent: 'center' }}
+                <img src="/favicon.png" style={{ padding: '3px 1px 0px 1px', width: "30px", height: "30px", alignItems: 'center', justifyContent: 'center' }}
                     alt="logo" />
             </span>
             <div style={{ textAlign: 'right' }}>
