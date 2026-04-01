@@ -1,48 +1,74 @@
 # Khushraj Rai Portfolio
 
-A futuristic, fully animated personal portfolio built with React, Framer Motion, and Vite. Designed from scratch with a red-dominant dark aesthetic, custom cursor, and smooth page transitions.
+A futuristic, fully animated **single-page personal portfolio** built with React, Framer Motion, and Vite. Designed with a bold red-dominant dark aesthetic, immersive transitions, and fluid interactions throughout the entire experience.
 
-## Tech Stack
+---
 
-- **React 18** : Component-based UI
-- **Framer Motion** : Animations and transitions
-- **React Router DOM** : Client-side routing
-- **React Icons** : Icon library
-- **Vite** : Lightning fast build tool
-- **Space Grotesk + Bebas Neue + Space Mono** : Typography
+## 🚀 Tech Stack
 
-## Features
+* **React 18** — Component-based UI
+* **Framer Motion** — Advanced animations & transitions
+* **React Icons** — Icon system
+* **Vite** — Ultra-fast build tool
+* **Space Grotesk + Bebas Neue + Space Mono** — Typography system
 
-- Custom animated cursor with spring physics
-- Fully animated hero section with sweep text reveal
-- Scrolling red ticker banner
-- Interactive skill board with color-coded tech categories
-- Project list with hover fill animations
-- Animated terminal code block
-- Contact page with social tiles and quote strip
-- Red scrollbar and custom selection color
-- Responsive layout
+---
 
-## Pages
+## ✨ Features
 
-| Route | Description |
-|-------|-------------|
-| `/` | Hero, stats strip, context cards |
-| `/projects` | Selected works with stack chips |
-| `/stack` | Full tech arsenal board |
-| `/about` | Philosophy, phases, terminal block |
-| `/connect` | Socials, contact, quote |
+### 🔴 Core Experience
 
-## Getting Started
+* Fully **single-page architecture** (no route-based navigation)
+* Smooth **scroll-based section transitions**
+* Seamless UX with no page reloads
+
+### 🎯 UI & Interaction
+
+* Custom **animated cursor** with spring physics
+* Global **smooth animations** powered by Framer Motion
+* **Red-themed scrollbar** and custom text selection
+* Highly responsive across all devices
+
+### 🧠 Sections (Replaces Old Multi-Page System)
+
+* **Hero Section** — Animated intro with sweep text reveal
+* **Stats / Info Strip** — Quick highlights
+* **Projects Section** — Interactive project cards with hover animations
+* **Tech Stack Board** — Color-coded skill visualization
+* **About Section** — Philosophy, journey, and mindset
+* **Terminal Block** — Animated code-style personal intro
+* **Contact Section** — Social tiles + quote strip
+
+### 🎨 Visual Elements
+
+* Scrolling **red ticker banner**
+* Hover-based **fill animations**
+* Smooth **reveal-on-scroll effects**
+* Consistent futuristic UI theme
+
+---
+
+## 🔄 Major Changes (v2 Update)
+
+* ❌ Removed multi-page routing (**React Router DOM no longer required**)
+* ✅ Converted entire app into a **single continuous page**
+* 🔁 Replaced page navigation with **scroll-based section flow**
+* ⚡ Improved performance and UX consistency
+* 🎯 Unified animation system across all sections
+
+---
+
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- Node.js v22+ — [Download here](https://nodejs.org)
+* Node.js v22+ — https://nodejs.org
 
 ### Installation
+
 ```bash
 # Clone the repo
-git clone https://github.com/khushrajrai/khushraj-portfolio.git
+git clone https://github.com/khushrajrai/khushraj-rai-portfolio.git
 
 # Go into the project
 cd khushraj-portfolio
@@ -50,20 +76,25 @@ cd khushraj-portfolio
 # Install dependencies
 npm install
 
-# Install extra packages
-npm install framer-motion react-router-dom react-icons
+# Install animation + icons
+npm install framer-motion react-icons
 
-# Start dev server
+# Start development server
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open: http://localhost:5173
 
-### Build for Production
+---
+
+## 📦 Build for Production
+
 ```bash
 npm run build
 ```
 
-## License
+---
+
+## 📄 License
 
 Distributed under the MIT License.

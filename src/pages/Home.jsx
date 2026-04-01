@@ -11,7 +11,7 @@ const fadeUp = (delay = 0) => ({
 export default function Home() {
     return (
         <div style={{ paddingTop: 64 }}>
-            {/* ── HERO ── */}
+            {/*  HERO  */}
             <section className="hero-section" style={{
                 minHeight: 'calc(100vh - 64px)',   /* desktop keeps full height */
                 display: 'grid',
@@ -125,7 +125,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── Context Triptych ── */}
+            {/*  Context Triptych  */}
             <section className="triptych-section" style={{ padding: '20px 48px 24px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
                     <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(255,59,77,0.18)', letterSpacing: '.02em' }}>01</span>
@@ -158,7 +158,7 @@ export default function Home() {
             </section>
 
             <style>{`
-                /* ── MOBILE ── */
+                /*  MOBILE  */
                 @media (max-width: 768px) {
                     /* Remove full-height constraint — shrink to content */
                     .hero-section {

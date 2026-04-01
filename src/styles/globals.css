@@ -105,13 +105,13 @@ section {
         line-height: 1.05 !important;
     }
 
-    /* kill all the per-page wrapper paddingTop divs on mobile */
+    /* kill all the per-page wrapper paddingTop divs on the mobile */
     div[style*="paddingTop"] {
         padding-top: 0 !important;
     }
 }
 
-/* ── SMALL MOBILE ── */
+/* MOBILE  */
 @media (max-width: 480px) {
     section {
         padding-left: 20px !important;
