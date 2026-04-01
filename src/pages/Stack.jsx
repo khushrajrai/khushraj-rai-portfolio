@@ -84,7 +84,7 @@ export default function Stack() {
 
             <style>{`
                 @media (max-width: 768px) {
-                    .stack-section { padding: 24px 34px 16px !important; }
+                    .stack-section { padding: 24px 23px 16px !important; }
                     .stack-grid { gap: 24px !important; }
                     .skill-row { grid-template-columns: 1fr !important; }
                     .skill-label { border-right: none !important; border-bottom: 1px solid var(--border2) !important; }

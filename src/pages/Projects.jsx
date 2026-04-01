@@ -411,10 +411,10 @@ export default function Projects() {
             <style>{`
                 @media (max-width: 768px) {
                     .projects-header {
-                        padding: 0 20px 40px !important;
+                        padding: 0 11px 40px !important;
                     }
                     .project-row {
-                        padding: 36px 20px !important;
+                        padding: 36px 11px !important;
                     }
                     .project-inner {
                         grid-template-columns: 1fr !important;
@@ -432,3 +432,4 @@ export default function Projects() {
         </div>
     )
 }
+

@@ -168,7 +168,7 @@ export default function Home() {
                     /* Full width text, tight padding */
                     .hero-content {
                         max-width: 100% !important;
-                        padding: 14px 16px 4px !important;
+                        padding: 14px 12px 4px !important;
                     }
                     /* Hide desktop elements */
                     .hero-divider { display: none !important; }
@@ -177,7 +177,7 @@ export default function Home() {
                     .mini-terminal-wrap { display: block !important; }
                     /* Triptych tighter */
                     .triptych-section {
-                        padding: 2px 32px 16px !important;
+                        padding: 2px 26px 16px !important;
                     }
                 }
             `}</style>
