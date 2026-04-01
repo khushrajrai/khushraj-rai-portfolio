@@ -15,11 +15,12 @@ export default function App() {
       <Navbar />
 
       <main>
-        <section id="home"><Home /></section>
-        <section id="stack"><Stack /></section>
-        <section id="projects"><Projects /></section>
-        <section id="about"><About /></section>
-        <section id="connect"><Connect /></section>
+        {/* id anchors for scroll-to — no padding here, each page manages its own */}
+        <div id="home"><Home /></div>
+        <div id="stack"><Stack /></div>
+        <div id="projects"><Projects /></div>
+        <div id="about"><About /></div>
+        <div id="connect"><Connect /></div>
       </main>
 
       <Footer />

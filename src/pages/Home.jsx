@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import GlitchTerminal from '../components/GlitchTerminal'
+import MiniTerminal from '../components/MiniTerminal'
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 30 },
@@ -9,32 +10,27 @@ const fadeUp = (delay = 0) => ({
 
 export default function Home() {
     return (
-        <div style={{ paddingTop: 34 }}>
-            {/* HERO  */}
-            <section style={{
-                minHeight: 'calc(100vh - 64px)',
+        <div style={{ paddingTop: 64 }}>
+            {/* ── HERO ── */}
+            <section className="hero-section" style={{
+                minHeight: 'calc(100vh - 64px)',   /* desktop keeps full height */
                 display: 'grid',
                 gridTemplateRows: '1fr auto',
                 position: 'relative',
                 overflow: 'hidden',
+                padding: 0,
             }}>
-
-                {/*  Glitch Terminal (right side, desktop only)  */}
+                {/* Desktop glitch terminal — right side */}
                 <GlitchTerminal />
 
-                {/*  Divider line between left text and terminal  */}
                 <div className="hero-divider" style={{
-                    position: 'absolute',
-                    top: 0, bottom: 0,
-                    left: '50%',
+                    position: 'absolute', top: 0, bottom: 0, left: '50%',
                     width: '1px',
                     background: 'linear-gradient(to bottom, transparent, rgba(232,37,58,0.18) 20%, rgba(232,37,58,0.18) 80%, transparent)',
-                    zIndex: 2,
-                    pointerEvents: 'none',
+                    zIndex: 2, pointerEvents: 'none',
                 }} />
 
-                {/* Year label */}
-                <div style={{
+                <div className="year-label" style={{
                     position: 'absolute', left: 14, top: '50%',
                     transform: 'translateY(-50%) rotate(-90deg)',
                     transformOrigin: 'left center',
@@ -45,36 +41,33 @@ export default function Home() {
                     {new Date().getFullYear()} Portfolio - Scroll to Explore
                 </div>
 
-                {/* Main content */}
-                <div
-                    className="hero-content"
-                    style={{
-                        position: 'relative', zIndex: 2,
-                        padding: 'clamp(60px, 8vw, 80px) clamp(20px, 6vw, 48px)',
-                        display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                        maxWidth: '50%',
-                    }}
-                >
+                {/* Main text content */}
+                <div className="hero-content" style={{
+                    position: 'relative', zIndex: 2,
+                    padding: 'clamp(48px, 8vw, 80px) clamp(16px, 6vw, 48px)',
+                    display: 'flex', flexDirection: 'column', justifyContent: 'center',
+                    maxWidth: '50%',
+                }}>
                     <motion.div {...fadeUp(0)} style={{
                         display: 'flex', alignItems: 'center', gap: 14,
                         fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red)',
-                        letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: 28,
+                        letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: 24,
                     }}>
                         <div style={{ width: 32, height: 1, background: 'var(--red)' }} />
                         AIML & Full Stack Developer
                     </motion.div>
 
-                    <div style={{ marginBottom: 36 }}>
+                    <div style={{ marginBottom: 28 }}>
                         <motion.span {...fadeUp(0.1)} style={{
                             display: 'block', fontFamily: 'var(--bebas)',
-                            fontSize: 'clamp(80px, 11vw, 148px)', lineHeight: 0.9,
+                            fontSize: 'clamp(64px, 11vw, 148px)', lineHeight: 0.9,
                             letterSpacing: '.02em', color: 'var(--text)',
                         }}>
                             Khushraj
                         </motion.span>
                         <motion.span {...fadeUp(0.2)} style={{
                             display: 'block', fontFamily: 'var(--bebas)',
-                            fontSize: 'clamp(80px, 11vw, 148px)', lineHeight: 0.9,
+                            fontSize: 'clamp(64px, 11vw, 148px)', lineHeight: 0.9,
                             letterSpacing: '.02em', position: 'relative',
                         }}>
                             <span style={{ WebkitTextStroke: '2px var(--red)', color: 'transparent' }}>Rai</span>
@@ -91,7 +84,7 @@ export default function Home() {
 
                     <motion.p {...fadeUp(0.35)} style={{
                         fontFamily: 'var(--grot)', fontSize: 15, color: 'var(--muted)',
-                        lineHeight: 1.75, maxWidth: 420, marginBottom: 44, fontWeight: 300,
+                        lineHeight: 1.75, maxWidth: 420, marginBottom: 28, fontWeight: 300,
                     }}>
                         Not just solving problems,{' '}
                         <strong style={{ color: 'var(--text)', fontWeight: 600 }}>engineering robust solutions</strong>
@@ -124,20 +117,22 @@ export default function Home() {
                             GitHub →
                         </motion.button>
                     </motion.div>
+
+                    {/* Mini terminal — mobile only, sits right below the buttons */}
+                    <div className="mini-terminal-wrap" style={{ display: 'none', marginTop: 28 }}>
+                        <MiniTerminal />
+                    </div>
                 </div>
-
-
             </section>
 
-
-            {/*  Context Triptych  */}
-            <section style={{ padding: '30px 48px 15px 48px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 48 }}>
-                    <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(255, 59, 77, 0.18),0.1)', letterSpacing: '.02em' }}>01</span>
+            {/* ── Context Triptych ── */}
+            <section className="triptych-section" style={{ padding: '20px 48px 24px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
+                    <span style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(255,59,77,0.18)', letterSpacing: '.02em' }}>01</span>
                     <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--red)', letterSpacing: '.25em', textTransform: 'uppercase' }}>Right Now</span>
                     <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 1, background: 'var(--border2)', border: '1px solid var(--border2)', borderRadius: 6, overflow: 'hidden' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 1, background: 'var(--border2)', border: '1px solid var(--border2)', borderRadius: 6, overflow: 'hidden' }}>
                     {[
                         { num: 'I', label: 'Current Status', q: 'Where am I standing?', a: 'Pursuing B.Tech in Computer Science (Spc. in Health Informatics) at VIT Bhopal, using each semester to build real-world systems.' },
                         { num: 'II', label: 'Trajectory', q: 'Where am I aimed?', a: 'Deep into AI Engineering at scale — not surface-level, but the infrastructure and reasoning that powers intelligent systems.' },
@@ -146,16 +141,16 @@ export default function Home() {
                         <motion.div
                             key={card.num}
                             whileHover={{ background: 'var(--s2)' }}
-                            style={{ background: 'var(--s1)', padding: 36, position: 'relative', overflow: 'hidden', cursor: 'none' }}
+                            style={{ background: 'var(--s1)', padding: 28, position: 'relative', overflow: 'hidden', cursor: 'none' }}
                         >
                             <motion.div
                                 initial={{ scaleX: 0 }}
                                 whileHover={{ scaleX: 1 }}
                                 style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: 'linear-gradient(90deg, var(--red), var(--red2))', transformOrigin: 'left' }}
                             />
-                            <div style={{ fontFamily: 'var(--bebas)', fontSize: 72, lineHeight: 1, color: 'rgba(232,37,58,0.07)', position: 'absolute', right: 24, top: 20, letterSpacing: '.02em' }}>{card.num}</div>
-                            <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--red)', letterSpacing: '.25em', textTransform: 'uppercase', marginBottom: 14 }}>{card.label}</div>
-                            <div style={{ fontSize: card.num === 'I' ? 26 : 20, fontWeight: 700, lineHeight: 1.2, letterSpacing: '-.02em', marginBottom: 20 }}>{card.q}</div>
+                            <div style={{ fontFamily: 'var(--bebas)', fontSize: 64, lineHeight: 1, color: 'rgba(232,37,58,0.07)', position: 'absolute', right: 16, top: 14, letterSpacing: '.02em' }}>{card.num}</div>
+                            <div style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--red)', letterSpacing: '.25em', textTransform: 'uppercase', marginBottom: 12 }}>{card.label}</div>
+                            <div style={{ fontSize: card.num === 'I' ? 22 : 18, fontWeight: 700, lineHeight: 1.2, letterSpacing: '-.02em', marginBottom: 14 }}>{card.q}</div>
                             <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', lineHeight: 1.85 }}>{card.a}</div>
                         </motion.div>
                     ))}
@@ -163,22 +158,26 @@ export default function Home() {
             </section>
 
             <style>{`
+                /* ── MOBILE ── */
                 @media (max-width: 768px) {
+                    /* Remove full-height constraint — shrink to content */
+                    .hero-section {
+                        min-height: 0 !important;
+                        height: auto !important;
+                    }
+                    /* Full width text, tight padding */
                     .hero-content {
                         max-width: 100% !important;
-                        padding-top: 48px !important;
+                        padding: 14px 16px 4px !important;
                     }
-                    .hero-divider {
-                        display: none !important;
-                    }
-                    .stats-strip {
-                        height: auto !important;
-                        padding: 24px 20px !important;
-                        grid-template-columns: 1fr !important;
-                        gap: 16px !important;
-                    }
-                    .stats-strip > div:last-child {
-                        text-align: left !important;
+                    /* Hide desktop elements */
+                    .hero-divider { display: none !important; }
+                    .year-label   { display: none !important; }
+                    /* Show mini terminal */
+                    .mini-terminal-wrap { display: block !important; }
+                    /* Triptych tighter */
+                    .triptych-section {
+                        padding: 2px 32px 16px !important;
                     }
                 }
             `}</style>

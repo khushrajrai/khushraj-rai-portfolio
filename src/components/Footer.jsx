@@ -16,7 +16,7 @@ export default function Footer() {
                 <img
                     src="/favicon.png"
                     alt="Logo"
-                    style={{ width: 24, height: 24 }}
+                    style={{ width: 40, height: 40, padding: '3px 0px 0px 12px' }}
                 />
             </div>
             <div style={{ textAlign: 'right' }}>

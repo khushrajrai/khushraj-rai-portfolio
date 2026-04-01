@@ -97,6 +97,7 @@ const projects = [
             'projects/heartstroke/1.png',
             'projects/heartstroke/2.png',
             'projects/heartstroke/3.png',
+            'projects/heartstroke/4.png',
         ],
     },
 ]

@@ -19,7 +19,6 @@
     --violet: #7C3AED;
     --teal: #0D9488;
     --text: #F7F3F8;
-    /* --muted: rgba(247, 243, 248, 0.38); */
     --muted: rgba(247, 243, 248, 0.55);
     --muted2: rgba(247, 243, 248, 0.15);
     --border: rgba(232, 37, 58, 0.12);
@@ -73,27 +72,7 @@ section {
     border-radius: 2px;
 }
 
-@media (max-width: 768px) {
-    nav {
-        padding: 0 20px !important;
-    }
-
-    section {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-}
-
-
-/* ---------- RESPONSIVE SYSTEM ---------- */
-
-.container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-/* Tablet */
+/* ── TABLET ── */
 @media (max-width: 1024px) {
     section {
         padding-left: 32px !important;
@@ -101,26 +80,41 @@ section {
     }
 }
 
-/* Mobile */
+/* ── MOBILE ── */
 @media (max-width: 768px) {
+    body {
+        cursor: auto;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
     section {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        padding-top: 15px !important;
+        padding-bottom: 32px !important;
     }
 
     nav {
-        padding: 0 20px !important;
+        padding: 0 16px !important;
     }
 
     h1 {
         line-height: 1.05 !important;
     }
+
+    /* kill all the per-page wrapper paddingTop divs on mobile */
+    div[style*="paddingTop"] {
+        padding-top: 0 !important;
+    }
 }
 
-/* Small Mobile */
+/* ── SMALL MOBILE ── */
 @media (max-width: 480px) {
     section {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
