@@ -1,16 +1,16 @@
 # Khushraj Rai Portfolio
 
-A futuristic, fully animated **single-page personal portfolio** built with React, Framer Motion, and Vite. Designed with a bold red-dominant dark aesthetic, immersive transitions, and fluid interactions throughout the entire experience.
+A futuristic, fully animated **personal portfolio** built with React, Framer Motion, and Vite. Designed with a bold red-dominant dark aesthetic, immersive transitions, and fluid interactions throughout the entire experience.
 
 ---
 
 ## 🚀 Tech Stack
 
-* **React 18** — Component-based UI
-* **Framer Motion** — Advanced animations & transitions
-* **React Icons** — Icon system
-* **Vite** — Ultra-fast build tool
-* **Space Grotesk + Bebas Neue + Space Mono** — Typography system
+* **React 18** : Component-based UI
+* **Framer Motion** : Advanced animations & transitions
+* **React Icons** : Icon system
+* **Vite** : Ultra-fast build tool
+* **Space Grotesk + Bebas Neue + Space Mono** : Typography system
 
 ---
 
@@ -18,7 +18,7 @@ A futuristic, fully animated **single-page personal portfolio** built with React
 
 ### 🔴 Core Experience
 
-* Fully **single-page architecture** (no route-based navigation)
+* Fully **single-page architecture**
 * Smooth **scroll-based section transitions**
 * Seamless UX with no page reloads
 
@@ -29,15 +29,15 @@ A futuristic, fully animated **single-page personal portfolio** built with React
 * **Red-themed scrollbar** and custom text selection
 * Highly responsive across all devices
 
-### 🧠 Sections (Replaces Old Multi-Page System)
+### 🧠 Sections
 
-* **Hero Section** — Animated intro with sweep text reveal
-* **Stats / Info Strip** — Quick highlights
-* **Projects Section** — Interactive project cards with hover animations
-* **Tech Stack Board** — Color-coded skill visualization
-* **About Section** — Philosophy, journey, and mindset
-* **Terminal Block** — Animated code-style personal intro
-* **Contact Section** — Social tiles + quote strip
+* **Hero Section** : Animated intro with sweep text reveal
+* **Stats / Info Strip** : Quick highlights
+* **Projects Section** : Interactive project cards with hover animations
+* **Tech Stack Board** : Color-coded skill visualization
+* **About Section** : Philosophy, journey, and mindset
+* **Terminal Block** : Animated code-style personal intro
+* **Contact Section** : Social tiles + quote strip
 
 ### 🎨 Visual Elements
 
@@ -48,15 +48,6 @@ A futuristic, fully animated **single-page personal portfolio** built with React
 
 ---
 
-## 🔄 Major Changes (v2 Update)
-
-* ❌ Removed multi-page routing (**React Router DOM no longer required**)
-* ✅ Converted entire app into a **single continuous page**
-* 🔁 Replaced page navigation with **scroll-based section flow**
-* ⚡ Improved performance and UX consistency
-* 🎯 Unified animation system across all sections
-
----
 
 ## 🛠️ Getting Started
 
@@ -70,8 +61,6 @@ A futuristic, fully animated **single-page personal portfolio** built with React
 # Clone the repo
 git clone https://github.com/khushrajrai/khushraj-rai-portfolio.git
 
-# Go into the project
-cd khushraj-portfolio
 
 # Install dependencies
 npm install
